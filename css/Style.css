@@ -1,0 +1,623 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0;
+}
+::-webkit-input-placeholder{
+	color: white;
+}
+::-moz-placeholder{
+	color: white;
+}
+:-ms-input-placeholder{
+	color: white;
+}
+#huojian{
+	position: fixed;
+	right: 40px;
+	bottom: 10px;
+	width: 40px;
+	height: 40px;
+	background:url(../img/火箭.jpg);
+	background-size: 100%;
+	z-index: 100;
+}
+#Header{
+	width: 100%;
+	height: 466px;
+	background: url(../img/img3.jpg);
+	background-size: 100%;
+	position: relative;
+	color: white;
+	/*background:url();*/
+}
+#MyHeadSculpture{
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	top: 50%;
+	margin-top: -175px;
+	left: 400px;
+	background: url(../img/img2.jpg);
+	background-size: 100%;
+}
+
+#SimpleInformation{
+	width: 760px;
+	height: 354px;
+	margin-left: 50px;
+	position: absolute;
+	top:50%;
+	margin-top: -177px;
+	left: 750px;
+}
+#SimpleInformation h1{
+	margin-top: 20px;
+}
+#SimpleInformation h4{
+	margin-top: 10px;
+}
+#SimpleInformation hr{
+	margin-top: 10px;
+	color: blue;
+
+}
+.hello{
+	width: 100px;
+	height: 50px;
+	background:url(../img/img4.jpg) no-repeat;
+	background-size: 60%;
+}
+.information{
+	height: 150px;
+	margin-top: 20px;
+	position: absolute;
+	bottom: 0;
+}
+.Imformation-ul1{
+	width: 200px;
+	height: 150px;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+.Imformation-ul2{
+	width: 300px;
+	height: 150px;
+	float: left;
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+#Navigation{
+	width: 100%;
+	height: 60px;
+	background: #ccffcc;
+	position: relative;
+}
+.Navigation-list{
+	position: absolute;
+	left: 50%;
+	width: 780px;
+	margin-left: -390px;
+	height: 60px;
+}
+.Navigation-list ul li a:before{
+	content:'[';
+	opacity: 0;
+	display: inline-block;
+	-webkit-transform:translateX(20px);
+	-moz-transform:translateX(20px);
+	-ms-transform:translateX(20px);
+	-o-transform:translateX(20px);
+	transform:translateX(20px); 
+	-webkit-transition:all 1s ease-in;
+	-moz-transition:all 1s ease-in;
+	-ms-transition:all 1s ease-in;
+	-o-transition:all 1s ease-in;
+	transition:all 1s ease-in;
+}
+.Navigation-list ul li a:after{
+	content:']';
+	opacity: 0;
+	display: inline-block;
+	-webkit-transform:translateX(-20px);
+	-moz-transform:translateX(-20px);
+	-ms-transform:translateX(-20px);
+	-o-transform:translateX(-20px);
+	transform:translateX(-20px); 
+	-webkit-transition:all 1s ease-in;
+	-moz-transition:all 1s ease-in;
+	-ms-transition:all 1s ease-in;
+	-o-transition:all 1s ease-in;
+	transition:all 1s ease-in;
+}
+.Navigation-list ul li:hover a:before{
+	-webkit-transform:translateX(-20px);
+	-moz-transform:translateX(-20px);
+	-ms-transform:translateX(-20px);
+	-o-transform:translateX(-20px);
+	transform:translateX(-20px);
+	opacity: 1;
+}
+.Navigation-list ul li:hover a:after{
+	-webkit-transform:translateX(20px);
+	-moz-transform:translateX(20px);
+	-ms-transform:translateX(20px);
+	-o-transform:translateX(20px);
+	transform:translateX(20px);
+	opacity: 1;
+}
+.Navigation-list ul li{
+	float: left;
+	height: 60px;
+	width: 130px;
+	
+	line-height: 60px;
+	text-align: center;
+}
+#AboutMe{
+	width: 100%;
+	height: 650px;
+	background: white;
+	position: relative;
+}
+.AboutMe-pane{
+	width: 1170px;
+	height: 650px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -585px;
+	margin-top: -325px;
+
+}
+.AboutMe-pane h1{
+	width: 1170px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: skyblue;
+	font-size: 50px;
+	font-weight: bolder;
+}
+.AboutMe-pane hr{
+	width: 1170px;
+}
+.AboutMe-content{
+	width: 1170px;
+	height: 328px;
+	position: absolute;
+	margin-top: 100px;
+}
+.AboutMe-content-left{
+	width: 700px;
+	height: 250px;
+	float: left;
+	font-size: 20px;
+}
+.AboutMe-content-right{
+	width: 380px;
+	height: 328px;
+	border: 5px solid skyblue;
+	right: 0;
+	position: absolute;
+}
+.AboutMe-content-right h2{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+
+}
+.AboutMe-content-right ul{
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -140px;
+}
+.AboutMe-content-right ul li{
+	margin-top: 20px;
+}
+#Experience{
+	width: 100%;
+	height: 1116px;
+	background: black;
+	position: relative;
+}
+.Experience-pane{
+	width: 1170px;
+	height: 950px;
+	position: absolute;
+	top: 50%;
+	margin-top: -475px;
+	left: 50%;
+	margin-left: -585px;
+
+}
+.Experience-pane h1{
+	
+	width: 1170px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: skyblue;
+	font-size: 50px;
+	font-weight: bolder;
+
+}
+.Experience-contents{
+	width: 1170px;
+	height: 800px;
+}
+.Experience-content{
+	width: 1170px;
+	height: 200px;
+}
+
+.Experience-content-left{
+	width: 570px;
+	height: 200px;
+	border-right-style: solid;
+	border-right-color: white;
+	
+	float: left;
+}
+.Experience-content-right{
+	width: 570px;
+	height: 200px;
+	
+	float: left;
+}
+.year{
+ 	font-size: 1.2em;
+    background: darkcyan;
+    display: inline-block;
+    padding: .6em 1.2em;
+    color: #fff;
+	position:absolute;
+	
+	
+}
+.Experience-content1 .year{
+	top: 20%;
+	margin-top: -30px;
+	right: 60%;
+}
+.Experience-content2 .year{
+	top: 40%;
+	margin-top: -10px;
+	left: 60%;
+}
+.Experience-content3 .year{
+	top: 60%;
+	right: 60%;
+}
+.Experience-content4 .year{
+	top: 80%;
+	margin-top: 10px;
+	left: 60%;
+}
+
+.box{
+	width: 60px;
+	height:60px;
+	position: absolute;
+	
+	
+	right: 50%;
+	margin-right: -15px;
+	
+}
+.box1{
+	top: 20%;
+	margin-top: -30px;
+}
+.box2{
+	top: 40%;
+	margin-top: -10px;
+}
+.box3{
+	top: 60%;
+}
+.box4{
+	top: 80%;
+	margin-top: 10px;
+}
+/*.Experience-pane hr{
+	width: 1170px;
+	width: 100px;
+}*/
+#Education{
+	width: 100%;
+	height: 1116px;
+	background: white;
+}
+#Skills{
+	width: 100%;
+	height: 564px;
+	background: black;
+	position: relative;
+}
+.Skills-contents{
+	width: 1170px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left:-585px;
+	top: 50%;
+	margin-top: -200px;
+	color: white;
+	
+}
+.Skills-contents h1{
+	width: 1170px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: skyblue;
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+.Skills-content{
+	width: 1170px;
+	height: 264px;
+	position: absolute;
+	bottom: 0;
+}
+.Skills-content-left{
+	width: 50%;
+	height: 264px;
+	float: left;	
+}
+.Skillssp{
+	float: right;
+}
+.Skillsd{
+	width: 400px;
+	height: 10px;
+	background-color: #333;
+}
+.Skillsdd{
+	width: 300px;
+	height: 10px;
+	background-color: #766E04;
+}
+.Skills-content-right{
+	width: 50%;
+	height: 264px;
+	float: left;
+}
+.Skills-content-pane{
+	width: 400px;
+	height: 264px;
+	margin-left: 93px;
+
+}
+#MyProjects{
+	width: 100%;
+	height: 1180px;
+	background: white;
+	position: relative;
+}
+.MyProjects-pane{
+	width: 1170px;
+	height: 1014px;
+	position: absolute;
+	top: 50%;
+	margin-top: -507px;
+	left: 50%;
+	margin-left: -585px;
+}
+.MyProjects-pane h1{
+	width: 1170px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: skyblue;
+	font-size: 50px;
+	font-weight: bolder;
+}
+.MyProjects-ul{
+	width: 1170px;
+	height: 50px;
+	background-color: yellow;
+	margin-top: 40px;	
+}
+.MyProjects-ul div{
+	position: absolute;
+	left: 30%;
+}
+.MyProjects-ul li{
+	width: 100px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+.MyProjects-ul li.active{
+	color: #fff;
+	background:#279f7c;
+	border-radius: 5px;
+}
+.MyProjects-ul li{
+	-webkit-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+	-ms-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
+}
+.MyProjects-ul li:hover{
+	color: #fff;
+	background:#279f7c;
+	border-radius: 5px;
+}
+.MyProjects-contents{
+	width: 1170px;
+	height: 800px;
+	margin-top: 20px;
+
+}
+.MyProjects-projects{
+	width: 350px;
+	margin-left:30px;
+	margin-top:30px;
+	height: 255px;
+	border:1px solid black;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.MyProjects-projects img{
+	width: 350px;
+	height: 225px;
+}
+.MyProjects-desc{
+	overflow: hidden;
+}
+.MyProjects-title{
+	float: left;
+}
+.MyProjects-click{
+	float: right;
+}
+.MyProjects-projects .mask{
+	width: 350px;
+	height: 225px;
+	position: absolute;
+	top: 0;
+	/*left: -100%;*/
+	background:rgba(39,159,124,0.6);
+	transition:all 0.5s ease-in;
+	transform:translateX(-100%);
+	text-align: center;
+}
+.MyProjects-projects:hover .mask{
+	transform:translateX(0);
+}
+#ContactMe{
+	width: 100%;
+	height: 720px;
+	background: #FFFFFF;
+	position: relative;
+	color: black;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #000000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:  #000000;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:  #000000;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #000000;
+}
+.ContactMe-pane{
+	width: 1170px;
+	height: 550px;
+	position: absolute;
+	top: 50%;
+	margin-top: -275px;
+	left: 50%;
+	margin-left: -585px;
+}
+.ContactMe-pane h1{
+	width: 1170px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: skyblue;
+	font-size: 50px;
+	font-weight: bolder;
+
+}
+.ContactMe-pane1{
+	width: 1170px;
+	height: 416px;
+	position: absolute;
+	bottom: 0;
+}
+.ContactMe-pane-left{
+	width: 540px;
+	height: 416px;
+	/*position: absolute;*/
+	background:url(../img/hehua.jpg) no-repeat;
+	background-size: 100%;
+	float: left;
+}
+.ContactMe-pane-right{
+	width: 570px;
+	height: 416px;
+	/*position: absolute;*/
+	float: right;
+
+}
+.ContactMe-pane-rightbottom1{
+	width: 264px;
+	height: 44px;
+	background-color:#FFFFFF;
+	border: 2px solid black;
+	margin-top: 5px;
+
+
+}
+.ContactMe-pane-rightbottom11{
+	width: 264px;
+	height: 44px;
+	background-color: #FFFFFF;
+	border: 2px solid black;
+	margin-top: 5px;
+	margin-left: 26px;
+}
+.ContactMe-pane-rightbottom3{
+	width: 566px;
+	height: 44px;
+	background-color:#FFFFFF;
+	border: 2px solid black;
+	margin-top: 5px;
+}
+.ContactMe-pane-rightbottom4{
+	width: 566px;
+	height: 140px;
+	background-color: #FFFFFF;
+	border: 2px solid black;
+	margin-top: 5px;
+	color: black;
+}
+.ContactMe-pane-rightbottom5{
+	width: 570px;
+	height: 44px;
+	background-color: #008B8B;
+	text-align: center;
+	border: 2px solid black;
+	margin-top: 10px;
+}
+#footer{
+	width: 100%;
+	height: 80px;
+	background: black;
+	color: white;
+	position: relative;
+}
+.foot{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	line-height: 30px;
+	text-align: center;
+}

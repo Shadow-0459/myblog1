@@ -40,7 +40,13 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
-
-
+$route['admin'] = "admin/welcome/login";
+$route['admin/login'] = "admin/welcome/login";
+$route['admin/index'] = "admin/welcome/index";
+$route['admin/category'] = "admin/welcome/mgr_category";
+$route['admin/blog'] = "admin/welcome/mgr_blog";
+$route['admin/comment'] = "admin/welcome/mgr_comment";
+$route['web'] = "welcome/web_demo";
+$route['welcome/main.html'] = "welcome/demo_main";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

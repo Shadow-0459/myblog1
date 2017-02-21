@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.article{
+    width: 1500px;
+    position: relative;
+    left: 50%;
+    margin-left: -750px;
+    margin-top: 50px;
+    height: 900px;
+}
+.img-main{
+    /*position: absolute;*/
+    width: 1500px;
+    height: 750px;
+    max-height: 750px;
+    max-width: 1500px;
+    /*left: 50%;*/
+    /*margin-left: -750px;*/
+
+    /*margin-top: 50px;*/
+}
+.article-content{
+    margin-top: 10px;
+    font-size: large;
+}
+.article-info{
+    /*position: absolute;*/
+    padding-left: 160px;
+    border: 1px dashed rgba(0,0,0,0.61);
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    overflow: hidden;
+    height: 70px;
+}
+.article-info li{
+    float:right;
+
+    height:70px;
+    line-height: 70px;
+    /*font-size: ;*/
+    padding-right: 50px;
+    width: 200px;
+    /*position: absolute;*/
+
+}
+.article-img{
+    width: 30px;
+    height: 30px;
+    /*z-index: 100;*/
+    vertical-align: middle;
+    /*margin-top: 10px;*/
+
+}
+.article-comment{
+    width: 1500px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -750px;
+}
+.article-comment h3{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.comment-wrapper{
+    background: #CCCCCC;
+    width: 1500px;
+    height: 500px;
+}
+.comment-head{
+    width: 80px;
+    height: 80px;
+    background: url("../img/头像.jpg");
+    background-size: 100%;
+    float: left;
+}
+.comment{
+
+    width: 600px;
+    height: 80px;
+    margin-left: 20px;
+    display: block;
+}
+.comment-info .post-date{
+    margin-left: 10px;
+}
+.comment .comment-info{
+    margin-top: 5px;
+}
+.comment .content{
+    margin-top: 5px;
+}
+.text-box{
+    /*border: none;*/
+    outline: none;
+    padding: 1rem;
+    margin-top: 23px;
+    color: #002166;
+    overflow: hidden;
+    width: 500px;
+    display: block;
+    font-size: 1rem;
+}
+
+/*.comment-form input[type=submit]*/
+.comment-form #btn-send{
+    width: 100px;
+    height: 42px;
+    background: #279f7c;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 1.2rem;
+    display: block;
+    outline: none;
+    /*boder:none;*/
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    margin: 0.8rem 0 0;
+
+}
