@@ -27,6 +27,7 @@ class Welcome extends CI_Controller
 //        ));
 //
 //    }
+
     public function index(){
         $this->load->model('blog_model');
        $this->load->model('blog_category_model');
